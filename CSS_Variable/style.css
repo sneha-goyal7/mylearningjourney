@@ -1,6 +1,6 @@
   :root{
-            --color: rgb(255, 0, 247);
-            --seccolor: rgb(231, 164, 246); 
+            --color: rgb(62, 222, 174);
+            --seccolor: rgb(155, 87, 207); 
             --defpad: 23px;
             --defop: 0.4;
         }
@@ -25,7 +25,7 @@
         }
 
         ul li:first-child{
-            --color: rgb(243, 87, 8);
+            --color: rgb(232, 236, 34);
             background-color: var(--color, blue);
         }
 
