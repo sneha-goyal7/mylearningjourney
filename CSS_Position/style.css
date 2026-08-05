@@ -42,16 +42,13 @@
         .box4 {
             background-color: purple;
         }
-
-      
-
+        
         .parent {
             padding: 43px;
             margin: 34px;
             border: 3px solid purple;
             /* position: relative; */
-
-
+            /* position: absolute; */
             /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
             /* transform: translate(0); */
             /* filter: invert(0); */
