@@ -6,22 +6,13 @@ body {
          color: rgb(213, 31, 62);
       }
 
-        @media screen and (orientation: portrait) {
+        /* @media screen and (orientation: portrait) {
             body{
                 border: 2px solid rgb(23, 1, 23);
             }
-        }
+        } */
 
-        @media only screen and (max-width: 455px){
-            body{
-
-                background-color: rgb(45, 202, 50);
-            }
-            
-            .boxes{
-                flex-direction: column;
-            }
-        }
+       
         
         /* @media not|only mediatype and (expressions) {
             CSS-Code;
@@ -38,3 +29,19 @@ body {
             padding: 3px;
             margin: 3px;
         }
+
+         @media only screen and (max-width: 455px){
+            body{
+
+                background-color: rgb(45, 202, 50);
+            }
+            
+            .boxes{
+                flex-direction: column;
+            }
+
+            .box{
+        background-color: rgb(13, 0, 255);  /* ye add karo */
+    }
+        }
+/*nice program real css start from here please see the comments and output inspect*/
