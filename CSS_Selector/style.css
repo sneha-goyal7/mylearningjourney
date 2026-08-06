@@ -1,48 +1,50 @@
-  /* .box:first-child{
-            background-color: red;
-        } */
+  .box:first-child{
+            background-color: rgb(0, 247, 255);
+        }
 
-        /* .box::first-line{
-            color: yellow;
-        } */
+        .box::first-line{
+            color: rgb(206, 235, 91);
+        }
 
-        /* .boxes *{
+        .boxes *{
             color: blue;
             border: 2px solid black;
         }
 
         p, a, .box, [data-color="primary"]{
             padding-top: 45px;
-        } */
+        } 
 
-        /* .box:nth-child(odd){
-            background-color: blue;
-        } */
+        .box:nth-child(odd){
+            background-color: rgb(216, 66, 111);
+        }
 
-        /* .box:nth-last-child(2){
-            background-color: red;
-        } */
+        .box:nth-last-child(2){
+            background-color: rgb(50, 202, 248);
+        }
 
         .boxes::before {
             content: "Harry is good";
-            color: blue;
+            color: rgb(62, 228, 59);
+            display: block;
         }
 
         .boxes::after {
             content: "Sigma course is also good";
-            color: red;
+            color: rgb(174, 209, 17);
+            display:block;
         }
 
         ::selection {
             background-color: black;
-            color: aqua;
+            color: rgb(202, 28, 31);
         }
 
         .box::first-letter {
-            color: peru;
+            color: rgb(219, 63, 24);
             font-size: 45px;
         }
 
         input::placeholder {
-            color: rgb(84, 84, 88);
+            color: rgb(178, 75, 82);
         }
