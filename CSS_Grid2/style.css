@@ -2,7 +2,7 @@
             border: 2px solid black;
             display: grid;
             grid-template-areas: "nav nav Nav"
-                "side article article"
+                "side article Article"
                 "footer footer footer";
         }
 
@@ -24,6 +24,11 @@
         .item-3 {
             grid-area: article;
             background-color: rgb(244, 178, 214);
+        }
+
+        .item-6 {
+            grid-area: Article;
+            background-color: rgb(103, 225, 50);
         }
 
         .item-4 {
