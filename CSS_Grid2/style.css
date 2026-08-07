@@ -1,19 +1,19 @@
 .container {
             border: 2px solid black;
             display: grid;
-            grid-template-areas: "nav nav nav"
+            grid-template-areas: "nav nav Nav"
                 "side article article"
                 "footer footer footer";
         }
 
         .item {
             border: 2px solid red;
-            height: 55px;
+            height: 200px;
         }
 
         .item-1 {
             grid-area: nav;
-            background-color: aqua;
+            background-color: rgb(73, 223, 218);
         }
 
         .item-2 {
@@ -23,13 +23,15 @@
 
         .item-3 {
             grid-area: article;
-            background-color: azure;
+            background-color: rgb(244, 178, 214);
         }
 
         .item-4 {
             grid-area: footer;
+            background-color: rgb(178, 244, 214);
         }
 
         .item-5 {
-            grid-area: nav;
+            grid-area: Nav;
+            background-color: rgb(222, 247, 142);
         }
