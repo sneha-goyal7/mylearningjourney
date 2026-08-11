@@ -16,3 +16,7 @@ else{
 
 console.log("your number is" + a)
 
+document.title = "Hey I am good"
+// add inline css in js
+document.body.style.backgroundColor = "aqua"        
+
