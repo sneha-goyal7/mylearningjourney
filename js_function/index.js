@@ -1,12 +1,13 @@
 console.log("hey sneha you are nice!")
 console.log("hey sneha you are too good to be fit in this cruel society!")
 
-function nice(name){
-    console.log("hey"+ name +"you are nice!")
-    console.log("hey"+ name +"you are too good to be fit in this cruel society!")
+function nice(name) {
+    console.log("hey" + name + "you are nice!")
+    console.log("hey" + name + "you are too good to be fit in this cruel society!")
 }
 
 nice(" sneha ")
+
 
 function sum(a, b, c = 3) {
     console.log(a + b)
@@ -22,3 +23,12 @@ result3 = sum(3, 13, 1)
 console.log("The sum of these numbers is: ", result1)
 console.log("The sum of these numbers is: ", result2)
 console.log("The sum of these numbers is: ", result3)
+
+
+const func1 = (x)=>{
+    console.log("I am an arrow function", x)
+}
+
+func1(34);
+func1(66);
+func1(84);
