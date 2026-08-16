@@ -14,7 +14,7 @@ for (let index = 0; index < arr.length; index++) {
 let newArr = arr.map((e, index, array)=>{
     return e**2
 })
-
+// e is just a variable u can choose any alphabet
 //2.FILTER
 
 console.log(newArr)
