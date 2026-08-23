@@ -8,7 +8,7 @@ let prom1 = new Promise((resolve, reject) => {
     else {
         setTimeout(() => {
             console.log("Yes I am done")
-            resolve("Harry")
+            resolve("sneha")
         }, 3000);
     }
 })
@@ -21,12 +21,11 @@ let prom2 = new Promise((resolve, reject) => {
     else {
         setTimeout(() => {
             console.log("Yes I am done 2")
-            resolve("Harry 2")
+            resolve("sneha goyal")
         }, 1000);
     }
 })
 
- 
 let p3 = Promise.race([prom1, prom2])
 p3.then((a)=>{
     console.log(a)
