@@ -92,10 +92,10 @@ for(let i in student){
     console.log(i,student[i]);   
 }
 //create a guessing number game
-let gamenum=5;
-let usernum=prompt("guess the game number:");
-while(usernum!=gamenum){
-    usernum=prompt("you entered the wrong number,try again:");
-}
-console.log("congratulation and celebration u got the correct number guess");
-//strings
+
+// let gamenum=5;
+// //let usernum=prompt("guess the game number:");
+// while(usernum!=gamenum){
+//     //usernum=prompt("you entered the wrong number,try again:");
+// }
+// console.log("congratulation and celebration u got the correct number guess");
