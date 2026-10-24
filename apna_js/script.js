@@ -56,10 +56,46 @@ switch(expr){
                 console.log(`sorry,we are out of ${expr}.`);
 }
 //mdn references
-alert("danger");
-prompt("whatsapp");
-let query=prompt("problem");
-console.log(query);
-let num=prompt("enter a number:");
-if(num%2===0)console.log("even");
-else console.log("odd");
+
+//abhi me isee comment me isliye daal rahi hoon kyunki baar baar yahi dikhega barna website pe jab bhi refresh hogi
+
+// alert("danger");
+// prompt("whatsapp");
+// let query=prompt("problem");
+// console.log(query);
+// let num=prompt("enter a number:");
+// if(num%2===0)console.log("even");
+// else console.log("odd");
+
+
+//loops in js
+
+for(let i=1;i<=5;i++){
+    console.log("sneha goyal");
+}
+//sum of n numbers
+let sum=0;
+for(let i=1;i<=5;i++){
+    sum+=i;
+}
+console.log(sum);
+//special loops in js
+let str="sneha";
+let size=0;
+for(let i of str){
+    console.log(i); 
+    size++;
+}
+console.log(size); 
+//
+for(let i in student){
+    console.log(i,student[i]);   
+}
+//create a guessing number game
+let gamenum=5;
+let usernum=prompt("guess the game number:");
+while(usernum!=gamenum){
+    usernum=prompt("you entered the wrong number,try again:");
+}
+console.log("congratulation and celebration u got the correct number guess");
+//strings
