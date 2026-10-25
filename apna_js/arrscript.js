@@ -51,7 +51,7 @@ function countvow(str){
     return count;
 }
 //for each loop
-let nums=[2,3,4,5,6];
+let nums=[2,3,14,5,6];
 nums.forEach((num)=>{
-    console.log(num*nums);
+    console.log(num*num);
 });
