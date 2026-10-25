@@ -18,3 +18,14 @@ console.log(output);
 let q="sneha\ngoyal";
 console.log(q.length);
 console.log(q);
+//built-in function in string
+let s="apna college";
+r=s.toUpperCase();
+t=s.toLowerCase();
+o=s.trim();
+console.log(r,t);
+console.log(o);
+//practice question
+let username=prompt("enter your fullname without spaces");
+let profilename="@"+username+username.length;
+console.log(profilename);
