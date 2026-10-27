@@ -18,3 +18,15 @@ for(div of divs){
     div.innerText=`new unique value ${idx}`;
     idx++;
 }
+//properties/methods
+let newBtn=document.createElement("button");
+newBtn.innerText="click me";
+console.log(newBtn);
+
+//updation in elements
+let div=document.querySelector("div");
+div.append(newBtn);
+//
+let neheading=document.createAttribute.createElement("h1");
+newheading.innerHTML="<i>hi, i am new!</i>";
+document.querySelector("body").prepend(newheading);
