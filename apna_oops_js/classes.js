@@ -127,15 +127,21 @@ calculator(1,2,sum);
 // getdata(1);
 // getdata(2);
 //updated code for nested callback
-function getdata(dataid,getnextdata){
-    setTimeout(()=>{
-        console.log("data",dataid);
-        if(getnextdata){
-            console.log 
+function getdata(dataid, getNextdata) {
+    setTimeout(() => {
+        console.log("data", dataid);
+        if (getNextdata) {
+            getNextdata();
         }
-        getnextdata();
-    },2000);
+    }, 2000);
 }
-getdata(1,()=>{
+
+getdata(1, () => {
     getdata(2);
+});
+//callback hell
+getdata(1, () => {
+    getdata(2,()=>{
+        getdata(3);
+    });
 });
