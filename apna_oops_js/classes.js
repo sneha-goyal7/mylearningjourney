@@ -110,3 +110,32 @@ console.log(a/b);
 console.log(a+b);
 console.log(a-b);
 console.log(a+b);
+
+//callbacks
+
+function sum(a,b){
+    console.log(a+b);
+}
+function calculator(a,b,sumCallback){
+    sumCallback(a,b);
+}
+calculator(1,2,sum); 
+//nested callback
+// function getdata(dataid){
+//     console.log("data",dataid);
+// }
+// getdata(1);
+// getdata(2);
+//updated code for nested callback
+function getdata(dataid,getnextdata){
+    setTimeout(()=>{
+        console.log("data",dataid);
+        if(getnextdata){
+            console.log 
+        }
+        getnextdata();
+    },2000);
+}
+getdata(1,()=>{
+    getdata(2);
+});
