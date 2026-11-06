@@ -17,6 +17,24 @@ function getData(dataId,getNextData){
     }, 2000);
     })
 }
+//async-await
+async function getAllData(){
+    console.log("getting data1");
+    await getData(1);
+    console.log("getting data2");
+    await getData(2);
+    console.log("getting data3");
+    await getData(3);
+}
+//IIFE
+(async function(){
+    console.log("getting data1");
+    await getData(1);
+    console.log("getting data2");
+    await getData(2);
+    console.log("getting data3");
+    await getData(3);
+})();
 //promise chain
 
 /*
@@ -117,3 +135,20 @@ asyncFunc1()
   .then((res) => {
     console.log(res);
   });  
+//async-await
+async function hello(){
+    console.log("hello");
+}
+//await
+function api(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("weather data");
+            resolve(200);
+        },2000);
+    });
+}
+async function getWeatherData(){
+    await api();
+    await api();
+}
