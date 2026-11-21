@@ -1,43 +1,158 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
 }
 
+/* ---------- Form card ---------- */
 .form-box {
-  width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  border: 2px solid #333;
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 12px;
+  border: 1px solid #d9e0ea;
+  box-shadow: 0 6px 24px rgba(30, 58, 138, 0.08);
 }
 
-h2 {
-  text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  margin-top: 0;
+.form-box h2 {
+  margin: 0 0 4px;
+  font-size: 26px;
+  color: #1e3a8a;
 }
 
-td {
-  padding: 8px;
+.form-intro {
+  margin: 0 0 24px;
+  color: #6b7280;
+  font-size: 14px;
 }
 
+/* ---------- Layout: label left, input right ---------- */
+.form-group {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+/* ---------- Inputs ---------- */
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 input[type="date"],
-select,
-textarea {
-  width: 280px;
-  padding: 5px;
-  border: 1px solid gray;
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #c3ccd9;
+  border-radius: 6px;
+  background: #fff;
+  color: #1f2937;
 }
 
-input[type="submit"],
-input[type="reset"] {
-  padding: 7px 20px;
-  background-color: #333;
-  color: white;
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
+
+/* ---------- Common label style ---------- */
+.form-group label,
+.form-group legend {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ---------- Different style for each label (class based) ---------- */
+.label-name     { color: #1e3a8a; }
+.label-father   { color: #0f766e; }
+.label-email    { color: #047857; }
+.label-phone    { color: #b45309; }
+.label-dob      { color: #7c3aed; }
+.label-gender   { color: #be123c; }
+.label-course   { color: #0369a1; font-style: italic; }
+.label-password { color: #9f1239; letter-spacing: 0.5px; }
+
+/* ---------- Gender (fieldset) ---------- */
+fieldset.form-group {
   border: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+fieldset legend {
+  padding: 0;
+  float: left;
+  width: 140px;
+}
+
+.radio-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.radio-label {
+  font-weight: 400 !important;
   cursor: pointer;
+}
+
+/* ---------- Terms checkbox ---------- */
+.checkbox-label {
+  display: block;
+  margin: 8px 0 20px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+}
+
+/* ---------- Button ---------- */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #1e3a8a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #162c6b;
+}
+
+button[type="submit"]:focus-visible {
+  outline: 3px solid rgba(30, 58, 138, 0.35);
+  outline-offset: 2px;
+}
+
+/* ---------- Mobile: label upar, input neeche ---------- */
+@media (max-width: 520px) {
+  .form-group {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  fieldset legend {
+    float: none;
+    width: auto;
+    margin-bottom: 6px;
+  }
 }
