@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">TaskFlow</h2>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Manage your tasks, simply.</h1>
+    <p>TaskFlow helps you plan your day and finish more work.</p>
+  </header>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <h2>Features</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Easy Planning</h3>
+        <p>Add tasks and organise them in seconds.</p>
+      </div>
+      <div class="card">
+        <h3>Reminders</h3>
+        <p>Never miss a deadline again.</p>
+      </div>
+      <div class="card">
+        <h3>Team Sharing</h3>
+        <p>Share your tasks with friends and teammates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <h2>Pricing</h2>
+
+    <div class="billing-toggle">
+      <button class="toggle-btn active" id="monthlyBtn">Monthly</button>
+      <button class="toggle-btn" id="yearlyBtn">Yearly</button>
+    </div>
+
+    <div class="cards">
+      <div class="card plan">
+        <h3>Free</h3>
+        <p class="price-free">$0</p>
+        <p>For personal use</p>
+      </div>
+      <div class="card plan">
+        <h3>Pro</h3>
+        <p class="price" data-monthly="$10/month" data-yearly="$96/year">$10/month</p>
+        <p>For students and freelancers</p>
+      </div>
+      <div class="card plan">
+        <h3>Team</h3>
+        <p class="price" data-monthly="$25/month" data-yearly="$240/year">$25/month</p>
+        <p>For small teams</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" id="newsletter">
+    <h2>Stay in the loop</h2>
+    <p>Get product updates and tips in your inbox.</p>
+
+    <div class="newsletter-form">
+      <input type="email" id="email" placeholder="Enter your email">
+      <button id="subscribe">Subscribe</button>
+    </div>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 TaskFlow</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
