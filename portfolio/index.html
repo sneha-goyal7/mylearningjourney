@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Goyal | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- particle js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- typed js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+    <!-- navbar section -->
+    <nav class="navbar">
+        <div class="logo">Sneha Goyal</div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- introdcution section -->
+    <section class="intro" id="intro">
+        <div id="particles-js"></div>
+        <div class="intro-content">
+            <div class="intro-image">
+                <img src="photo.png" alt="Sneha Goyal">
+            </div>
+            <div class="intro-text">
+                <h1><span id="typed">Developer</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a final-year Computer Science and Engineering student and a full-stack developer who builds real-time
+            web applications and AI-powered tools using modern technologies. I love solving problems with C++ (300+ DSA
+            problems solved on LeetCode) and building apps that are performant, beautiful, and user-friendly.</p>
+    </section>
+
+    <!-- experience section -->
+    <section class="timeline-section" id="experience">
+        <h2>Certifications &amp; Training</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Gen AI &amp; Cloud Computing - IBM SkillsBuild</h3>
+                <span>Jun 2026 - Jul 2026</span>
+                <p>Completed the Gen AI and Cloud Computing internship, AICTE approved under the Bharat Cares
+                    Initiative.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Full Stack Developer - SimpliLearn SkillUp</h3>
+                <span>Certification</span>
+                <p>Completed the Full Stack Developer certification covering frontend, backend, and database
+                    development.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>ChatGPT for Students - HCL GUVI Bharat AI Initiative</h3>
+                <span>Course</span>
+                <p>Powered by OpenAI. Learned prompting techniques and responsible AI practices.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- skills section -->
+    <section class="skills-section" id="skills">
+        <h2>skills</h2>
+        <ul class="skills-list">
+            <!-- Languages -->
+            <li>C++</li>
+            <li>C</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+
+            <!-- Frontend -->
+            <li>React</li>
+            <li>Vite</li>
+            <li>HTML</li>
+            <li>CSS</li>
+
+            <!-- Backend -->
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Supabase</li>
+
+            <!-- DevOps -->
+            <li>Docker</li>
+            <li>K8s</li>
+            <li>AWS</li>
+            <li>Prometheus</li>
+            <li>Grafana</li>
+
+            <!-- Databases -->
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Redis</li>
+            <li>Firebase</li>
+        </ul>
+    </section>
+
+    <!-- education section -->
+    <section class="timeline-section" id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>B.Tech, Computer Science &amp; Engineering - Ajay Kumar Garg Engineering College, Ghaziabad</h3>
+                <span>2023 - 2027</span>
+                <p>Final year. Focused on full stack development, DSA in C++, and Gen AI.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- project section -->
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Kriya</h3>
+            <p>A personalized AI learning platform with student and instructor roles. It covers course management,
+                video lectures per module, progress tracking, and AI-personalized recommendations. JWT login, a payment
+                gateway for premium courses, and a responsive UI. Frontend on Vercel, backend on Render.</p>
+            <p><small>React, Node.js, Express, MongoDB, JWT, Tailwind CSS</small></p>
+            <div class="project-buttons">
+                <a href="https://kriya-pro.vercel.app" target="_blank" class="btn-live">Live</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Git-PR-Assist</h3>
+            <p>Sign in with GitHub, pick a repository and pull request, and get AI-generated review feedback on bugs,
+                code quality, and improvements. Five Express REST APIs fetch PR diffs, build structured prompts for the
+                LLM, and save each user's review history in MongoDB.</p>
+            <p><small>React, Node.js, Express, MongoDB, GitHub API, LLM API</small></p>
+            <div class="project-buttons">
+                <a href="https://github.com/sneha-goyal7/Git-PR-Assist" target="_blank" class="btn-code">Code</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Codos</h3>
+            <p>An online code judge with 15 problems. Write C++ or JavaScript in the in-browser editor and get instant
+                verdicts (Accepted, Wrong Answer, Time Limit Exceeded) against 5 test cases per problem. JWT auth,
+                Judge0 API for execution, and submission history in MongoDB.</p>
+            <p><small>React, Node.js, Express, MongoDB, JWT, Judge0</small></p>
+            <div class="project-buttons">
+                <a href="https://github.com/sneha-goyal7/Codos" target="_blank" class="btn-code">Code</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Brewn</h3>
+            <p>A responsive cafe ordering site with 30+ products, search and dietary filters, item customization with
+                live pricing, and a cart. Supports dine-in, takeout, and pickup orders.</p>
+            <p><small>HTML, CSS, JavaScript</small></p>
+            <div class="project-buttons">
+                <a href="https://brewncafe.netlify.app/" target="_blank" class="btn-live">Live</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-subtitle">
+            I'm currently open to new opportunities. Whether you have a question or just want to say hi, fill the form
+            below or email me at snehagoyal4295@gmail.com
+        </p>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea type="text" placeholder="Your Message" rows="5" required> </textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <p> &copy;2026 All Rights Reserved | Design & Develop by
+            <span class="brand">
+                Sneha Goyal
+            </span>
+        </p>
+        <div class="socials">
+            <a href="https://github.com/sneha-goyal7" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/goyal-sneha7" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://leetcode.com/u/sneha_goyal7/" target="_blank">
+                <i class="fas fa-code"></i>
+            </a>
+            <a href="mailto:snehagoyal4295@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
